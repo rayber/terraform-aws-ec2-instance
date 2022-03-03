@@ -124,7 +124,7 @@ data "aws_ami" "encrypted-ami" {
   most_recent = true
 
   filter {
-    name   = "name"
+    name   = "image-id"
     values = [aws_ami_copy.ubuntu_encrypted_ami.id]
   }
 
